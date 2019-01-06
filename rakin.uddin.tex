@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This is a modified ONE COLUMN version of
 % the following template:
@@ -47,11 +48,8 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{deedy-resume-openfont}
-
-
+\documentclass[]{deedy-resume}
 \begin{document}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -60,18 +58,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\namesection{Rakin}{Uddin}{ \urlstyle{same}\href{https://www.rakinu.com}{rakinu.com} \\
+\namesection{Rakin}{Uddin}{ \urlstyle{same}\href{https://rakinu.com}{rakinu.com} \\
 \href{mailto:rakinuddin97@gmail.com}{rakinuddin97@gmail.com} | +1 647 678 9569 |
 \href{https://www.linkedin.com/in/rakinuddin/}{linkedin.com/in/rakinuddin}
 }
 
+\section{Education}
+
+\runsubsection{University of Toronto}
+\descript{| Honours B.Sc. in Computer Science}
+\location{Spec. in Software Engineering | Sept 2015 - Dec 2019 | Toronto, CA}
+\textbf{Teaching Assistant:} Introduction to Databases, Principles of Programming Languages, Calculus
+\newline
+\textbf{Notable Courses:} Network Security, Artificial Intelligence, Database System Technology
+\sectionsep
+
 \section{Experience}
+
+\runsubsection{JoatSpace}
+\descript{| Software Developer Intern }
+\location{Dec 2018 – Present | Remote}
+\begin{tightemize}
+\item Designed and implemented an application for admins/volunteers to manage hundreds of service requests and user applications using React, Redux, Firebase and GCP
+\end{tightemize}
+\sectionsep
 
 \runsubsection{Thomson Reuters}
 \descript{| Software Engineering Intern }
 \location{Jan 2018 – Aug 2018 | Toronto, CA}
 \begin{tightemize}
-\item Developed an internal BI ingestion and visualization platform for managers to track and measure 1000+ metric items from 10+ teams
+\item Developed an internal BI ingestion/visualization platform in Node, AWS and PostgreSQL for managers to track and measure 1000+ metric items from 10+ teams
 \item Created microservices in TypeScript and Node to extract 100+ metric items from GitLab and JIRA each day
 \item Developed analytics features in Java for a container security microservice analyzing 5000+ containers per day
 \end{tightemize}
@@ -83,7 +99,6 @@
 \begin{tightemize}
 \item Took ownership of 2 data-driven applications, delivering new features using XML, JSON, HTML/CSS, AngularJS, C\#, and SQL to be used by 150+ board users across Ontario
 \item Developed many asynchronous backend services in C\# and LINQ which reduced application loading time by 300\%
-\item Introduced a modular, scalable XLSX parsing library in C\# enabling developers to integrate Excel file uploads into their applications
 \end{tightemize}
 \sectionsep
 
@@ -91,7 +106,6 @@
 \descript{| Cloud Infrastructure Developer Intern}
 \location{Sept 2016 – April 2017 | Toronto, CA}
 \begin{tightemize}
-\item Engineered and implemented secure, scalable, multi-tier cloud infrastructure using Microsoft Azure
 \item Developed automated scripts in Batch files and Windows PowerShell, one of which reduced operational costs by 52\% in 4+ Proof-of-Concept systems
 \item Integrated Infrastructure as Code (IaC) processes by capturing state and configuration of PoC systems into JSON templates, enabling one-touch deployment of infrastructure
 \end{tightemize}
@@ -102,41 +116,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{\href{https://github.com/ItsMeWithTheFace}{Projects}}
-\runsubsection{QHub}
-\location{Aug 2018 – Present}
-\begin{tightemize}
-\item Developed a system for professors to share and manage assignments and their rubrics for courses in Computer Science, Mathematics and Statistics
-\item Implemented multi-threaded backend API in Ruby with Firebase authentication and MySQL database
-\item Integrated a ReactJS interface with Redux
-\end{tightemize}
-\sectionsep
 
-\runsubsection{\href{https://teach.rakinu.com}{DocStore}}
+\runsubsection{\href{https://teach.rakinu.com}{TIL}}
 \location{Sept 2018 – Present}
 \begin{tightemize}
 \item A web app designed to be a highly accessible repository for students to access notes and lessons from my tutorials
-\item Made with ReactJS, GraphQL and Markdown using GatsbyJS
+\item Made with ReactJS, Markdown and Docusaurus
 \end{tightemize}
 \sectionsep
 
-\section{Education}
-
-\runsubsection{University of Toronto}
-\descript{| BS in Computer Science}
-\location{Spec. in Software Engineering | Expected Dec 2019 | Toronto, CA}
-\textbf{Teaching Assistant:} Databases, Principles of Programming Languages, Calculus
+\runsubsection{QHub}
+\location{Aug 2018 – Dec 2018}
+\begin{tightemize}
+\item Developed a system for professors to share and manage assignments and their rubrics for courses in Computer Science, Mathematics and Statistics
+\item Implemented backend in Ruby with authentication and MySQL database as well as the frontend in React
+\end{tightemize}
 \sectionsep
 
 \section{Skills}
-\begin{minipage}[t]{.6\textwidth}
-\subsection{Languages}
+\begin{minipage}[t]{1.0\textwidth}
+\subsection{Languages/Frameworks}
 Java \textbullet{} Python \textbullet{} JavaScript \textbullet{} C \textbullet{}
-C\# \textbullet{} Ruby \textbullet{} SQL \textbullet{} Haskell
+C\# \textbullet{} Ruby \textbullet{} SQL \textbullet{} Haskell \textbullet{}
+Node \textbullet{} React \textbullet{} Redux \textbullet{} Ruby \textbullet{} Rails
 \sectionsep
-\subsection{Frameworks}
-Node \textbullet{} React \textbullet{} Redux \textbullet{} Angular \textbullet{} Rails
+\subsection{Other}
+Docker \textbullet{} Kubernetes \textbullet{} AWS \textbullet{} Azure \textbullet{} GCP
+\textbullet{} CircleCI \textbullet{} Vagrant \textbullet{} Git \textbullet{} Maven
 \sectionsep
 \end{minipage}
 \hfill
 
-\end{document}  \documentclass[]{article}
+\end{document}
+\documentclass[]{deedy-resume}
