@@ -1,8 +1,5 @@
 name: Build and push latex
-on:
-  push:
-    branches:
-      - master
+on: [push]
 jobs:
   build_latex:
     runs-on: ubuntu-latest
