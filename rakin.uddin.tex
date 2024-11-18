@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This is a modified ONE COLUMN version of
 % the following template:
-% 
+%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.1 (30/4/2014)
@@ -19,16 +19,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -65,9 +65,21 @@
 
 \section{Experience}
 
+\runsubsection{Atlassian}
+\descript{| Software Engineer | Security Development Team }
+\location{Mar 2022 – Present | Austin, TX}
+\begin{tightemize}
+\item Drove implementation of a public portal providing known vulnerability information of Atlassian products used by Forbes 500 companies
+\item Led the design and revamp of internal vulnerability reporting pipeline, resulting in reduced reporting times for 50,000+ vulnerabilities by 40\%
+\item Developed system to track software inventory in 160,000 instances for outdated dependencies
+\item Guided an intern to implement new API that notifies hundreds of users of unresolved vulnerabilities related to their services. Resulted in high performance ratings and return offer for intern
+\item Mentored multiple entry-level engineers, providing feedback and areas for growth. Enabled them to reach promotion to junior level
+\end{tightemize}
+\sectionsep
+
 \runsubsection{HubSpot}
 \descript{| Software Engineer | Infrastructure Security Team }
-\location{Jan 2020 – Present | Austin, TX}
+\location{Jan 2020 – Mar 2022 | Cambridge, MA}
 \begin{tightemize}
 \item Built automation to monitor 20 million+ GitHub events and suggest least privilege scopes for 3000+ GitHub tokens
 \item Designed and led migration of existing LDAP infrastructure onto Docker/Kubernetes, used to authenticate 1500+ requests/second
@@ -88,21 +100,11 @@
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Weav}
-\descript{| Software Engineer | Backend \& Infrastructure Team }
-\location{Feb 2019 – Aug 2019 | Toronto, CA}
-\begin{tightemize}
-\item Designed and implemented messaging service in GraphQL and WebSockets to enable real-time communication between 100+ of users
-\item Engineered robust enroute system in GraphQL, NodeJS, and WebSockets to ensure users reach destination
-\end{tightemize}
-\sectionsep
-
 \runsubsection{Thomson Reuters}
 \descript{| Software Engineering Intern | Container Services Team }
 \location{Jan 2018 – Aug 2018 | Toronto, CA}
 \begin{tightemize}
 \item Developed an internal BI ingestion/visualization platform in NodeJS, AWS and PostgreSQL for managers to track and measure 1000+ metric items from 10+ teams
-\item Created microservices in TypeScript and NodeJS to extract 100+ metric items from GitLab and JIRA each day
 \item Developed analytics features in Java for a container security microservice analyzing 5000+ containers per day
 \end{tightemize}
 \sectionsep
